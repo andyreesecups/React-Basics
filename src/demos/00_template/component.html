@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>React - Component</title>
+    <script src="../../js/react.min.js"></script>
+    <script src="../../js/react-dom.min.js"></script>
+    <script src="../../js/browser.min.js"></script>
+</head>
+<body>
+
+    <div id="container"></div>
+
+    <script type="text/babel">
+        var Andrew = React.createClass({
+            render: function() {
+            return (<div>
+            <h3>Go Spurs Go!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat iure cum, minus expedita earum iusto adipisci aspernatur ea dignissimos provident! Totam nihil fuga nulla culpa optio, assumenda, doloremque quis nesciunt!</p>
+            </div>
+            );
+            }
+
+        });
+        
+
+        ReactDOM.render(<div>
+            <Andrew />
+            <Andrew />
+            <Andrew />
+            </div>,
+            document.getElementById('container')
+        );
+    </script>
+
+</body>
+</html>
